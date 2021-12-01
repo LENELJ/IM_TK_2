@@ -10,7 +10,7 @@
 body{
     margin-bottom: 50px;
 }
- #nav{
+#nav{
     margin:5px 30px;
     display: flex;
     font-family: 'Abhaya Libre', serif;
@@ -50,6 +50,7 @@ body{
 main{
     
     font-family: 'Raleway', sans-serif;
+    padding-bottom: 50px;
 }
 main h3{
     

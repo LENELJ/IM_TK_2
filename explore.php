@@ -33,7 +33,7 @@
     }
 
     $user = check_login($conn);
-    get_order();
+    // get_order();
     // print_r ($user);
 ?>
 <!DOCTYPE html>
@@ -86,12 +86,12 @@
                                     
                     if(mysqli_num_rows($displayimg)> 0){
                         while($img_row = mysqli_fetch_assoc( $displayimg)){
-                            $img=$img_row['tattoo_image'] ;
-                            $name=$img_row['tattoo_name'];
-                            $price=$img_row['tattoo_price'];
-                            $desc=$img_row['tattoo_description'];
-                            $color=$img_row['color_scheme'];
-                            $id=$img_row['tattoo_id'];
+                            $img =$img_row['tattoo_image'] ;
+                            $name =$img_row['tattoo_name'];
+                            $price =$img_row['tattoo_price'];
+                            $desc =$img_row['tattoo_description'];
+                            $color =$img_row['color_scheme'];
+                            $id =$img_row['tattoo_id'];
                             
                 ?>
                     <div class="pics">
