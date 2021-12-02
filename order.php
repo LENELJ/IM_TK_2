@@ -35,10 +35,10 @@ if(isset($_POST['order_item'])){
     $unID=uniqid();
     $ins_order= "INSERT INTO `order_item`(`item_id`,`order_id`,`tattoo_id`) 
                 VALUES ('$unID','$order_id','$client_id')";
-                
+
     mysqli_query($conn,$ins_order);
     
 }
 
-
+// mysqli_close($conn);
 ?>
