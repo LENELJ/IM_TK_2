@@ -11,10 +11,9 @@ if(isset($_POST['order_item'])){
     } else {
         // insert into order
         $uniq= uniqid();
-        $date=date("Y-m-d");
 
-        $insert= "INSERT INTO `workorder` (`order_id`,`client_id`,`order_date`) 
-                  VALUES ('$uniq','$id','$date')";
+        $insert= "INSERT INTO `workorder` (`order_id`,`client_id`) 
+                  VALUES ('$uniq','$id')";
 
         if (mysqli_query($conn, $insert)) {
             $order="SELECT `order_id` 
@@ -40,5 +39,5 @@ if(isset($_POST['order_item'])){
     
 }
 
-// mysqli_close($conn);
+mysqli_close($conn);
 ?>
