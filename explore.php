@@ -139,15 +139,6 @@
             </div>
         </div>
     </main>
-
-    <!-- <script text='text/javascript'>
-        $(document).ready(function(){
-            $('.user').click(function(){
-                var user = $(this).data('tattoo_id');
-                alert(user)
-            });
-        });
-    </script> -->
     <script src="explore.js"></script>
 </body>
 </html>
